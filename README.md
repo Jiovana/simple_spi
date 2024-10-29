@@ -6,6 +6,9 @@
   - adding overflow control,
   - a buffer to save data at the end of each transaction.
   - spi_clock frequency control
+  - important: I realized after synthesis that counter is not being used for anything!!!
+  Need to add logic to stop transmission controlled by t_size and thus use the counter to trigger signals!
+  
 
 The master can handle the four SPI operation modes using the signals cpha (clock phase) and cpol (clock polarity):
 

@@ -41,7 +41,7 @@ module spi_test();
 	reg [BITS-1:0] aux;
 
 
-    spi_top #(.REG_WIDTH(BITS)) master
+    spi_master master
 	(
 		.sys_clk(sys_clk),
 		.t_start(t_start),
